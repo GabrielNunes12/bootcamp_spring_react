@@ -3,13 +3,16 @@ package com.gabriel.finalexercise.DTOs;
 import com.gabriel.finalexercise.Models.Client;
 
 import java.io.Serializable;
+import java.time.Instant;
 
 public class ClientDTO implements Serializable {
     private static final long serialVersionUID = 1L;
     private Long id;
     private String name;
     private String cpf;
+    private Double income;
     private Integer children;
+    private Instant birthDate;
 
     public ClientDTO(Long id, String name, String cpf, Integer children) {
         this.id = id;
@@ -34,6 +37,23 @@ public class ClientDTO implements Serializable {
 
     public String getName() {
         return name;
+    }
+
+
+    public Double getIncome() {
+        return income;
+    }
+
+    public void setIncome(Double income) {
+        this.income = income;
+    }
+
+    public Instant getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Instant birthDate) {
+        this.birthDate = birthDate;
     }
 
     public void setName(String name) {

@@ -1,13 +1,26 @@
 package com.gabriel.finalexercise.Models;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.Instant;
 
-public class Client {
+@Table(name = "tb_client")
+@Entity
+public class Client implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
+
     private String cpf;
+
     private Double income;
+
     private Instant birthDate;
+
     private Integer children;
 
     public Client(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {

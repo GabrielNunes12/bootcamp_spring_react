@@ -1,0 +1,10 @@
+INSERT INTO tb_client(name, cpf, income, birth_Date, children ) VALUES ('José Alves' , '484.624.317-60', 2500, NOW(), 2);
+INSERT INTO tb_client(name, cpf, income, birth_Date, children ) VALUES ('José Alburquerque', '218.631.226-30', 2100, NOW(), 0);
+INSERT INTO tb_client(name, cpf, income, birth_Date, children) VALUES ('José Clemendes', '375.556.873-05', 5000, NOW(), 1);
+INSERT INTO tb_client(name, cpf, income, birth_Date, children ) VALUES ('Ana Maria', '621.252.334-79', 3000.50, NOW(), 2);
+INSERT INTO tb_client(name, cpf, income, birth_Date, children) VALUES ('Ana Clara', '246.838.720-13', 1200.00, NOW(), 3);
+INSERT INTO tb_client(name, cpf, income, birth_Date, children ) VALUES ('Ana Maria Alves', '744.257.380-04', 1000, NOW(), 6);
+INSERT INTO tb_client(name, cpf, income, birth_Date, children ) VALUES ('Mario José', '877.715.422-39', 4050, NOW(), 3);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children ) VALUES ('Luciano André', '297.302.189-86', 8000, NOW(), 2);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children ) VALUES ('Luciano André de Souza', '454.622.414-10', 2000, NOW(), 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children ) VALUES ('Maria', '742.852.573-00', 4400, NOW(), 0);
