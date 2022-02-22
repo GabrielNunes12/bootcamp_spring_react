@@ -45,7 +45,7 @@ public class ClientController {
         return ResponseEntity.created(uri).body(clientDTO);
     }
 
-    @PutMapping
+    @RequestMapping(method = RequestMethod.PUT, value = "/{id}")
     public ResponseEntity<ClientDTO> updateClient(@PathVariable Long id, @RequestBody ClientDTO clientDTO) {
         clientDTO = clientService.updateClient(id, clientDTO);
         return ResponseEntity.ok(clientDTO);

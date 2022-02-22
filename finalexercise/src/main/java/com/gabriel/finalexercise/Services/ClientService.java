@@ -39,6 +39,7 @@ public class ClientService {
         client.setName(clientDTO.getName());
         client.setIncome(clientDTO.getIncome());
         client.setBirthDate(clientDTO.getBirthDate());
+        client.setChildren(clientDTO.getChildren());
         client.setCpf(clientDTO.getCpf());
         client = clientRepository.save(client);
         return new ClientDTO(client);
